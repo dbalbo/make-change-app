@@ -1,18 +1,92 @@
 class Fixnum
   define_method(:make_change) do
 
-    self./(25)
+    coins = 25
+    counter = 0
+      until counter == coins.div(10) do
+        counter += 1
+      end
+      counter
 
-    # until quartercounter.==(0)
-    # answer = answer.push(coinvalues.fetch(25))
-    # end
-    # answer
+
+
+
   end
 end
 
 
+
+
+
+# until quartercounter.==(0)
+# answer = answer.push(coinvalues.fetch(25))
+# end
+# answer
+
 #quarters.fetch()
 
+# first divide self by quarters(25)
+#
+# if self.%(25) == 1
+#
+#   "quarter"
+#
+# elsif self by di(10)
+#
+#   remainder = self.%(10)
+#
+# then divide remainder of self by nickels(5)
+#
+#   new_remainder = remainder.%(5)
+#
+# and then divide remainder of self by pennies(1)
+#
+#   newer_remainder = new_remainder.%(1)
+
+
+
+
+
+
+
+# quarter = 25
+# dime = 10
+# nickel = 5
+# penny = 1
+#
+# # totalchange = [1, ]
+# #
+# # totalchange = [1 quarter, 2 dimes, 1 nickel]
+#
+# number_of_quarters = self./(quarter)
+#
+#   totalchange = totalchange.push(number_of_quarters)
+#
+# number_of_dimes = self./(self.-(number_of_quarters.*(25))
+#
+#   puts number_of_dimes
+#
+# number_of_nickels = self./number_of_dimes
+#
+#   puts number_of_nickels
+#
+#
+#
+# how many quarters in self ?
+#
+#   this many
+#
+# how many dimes left in self after taking out the quarters?
+#
+#   thismanydimes =
+#
+# how many nickels are left in self after taking out dimes?
+#
+#   this many
+#
+# how many pennies are left in self after taking out nickels?
+#
+#   this many
 
 
 
@@ -45,7 +119,8 @@ end
 
 # 35./(25)
 #
-# 35./(10)
+# 25./(10)
+    #answer
 #
 # if self./(quarter)
 #
