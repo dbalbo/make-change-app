@@ -4,19 +4,21 @@ class Fixnum
 
     coins = self
 
-    numberofquarters =0
+    numberofquarters = 0
     until numberofquarters == coins.div(25) do
       numberofquarters += 1
     end
 
+    changeafterquarters = coins - (numberofquarters*25)
+
     numberofdimes = 0
-    until numberofdimes == coins.div(10) do
+    until numberofdimes == changeafterquarters.div(10) do
       numberofdimes += 1
     end
     #numberofdimes
 
 
-    changeleft = coins - (numberofdimes*10)
+    changeleft = changeafterquarters - (numberofdimes*10)
 
     numberofnickels = 0
     until numberofnickels == changeleft.div(5) do
@@ -30,7 +32,7 @@ class Fixnum
     until numberofpennies == newchangeleft.div(1) do
       numberofpennies += 1
     end
-   puts numberofquarters  
+   puts numberofquarters
    puts numberofdimes
    puts numberofnickels
    puts numberofpennies
