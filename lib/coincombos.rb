@@ -1,14 +1,31 @@
 class Fixnum
+
   define_method(:make_change) do
 
-    coins = 25
-    counter = 0
-      until counter == coins.div(10) do
-        counter += 1
-      end
-      counter
+    coins = self
+
+    numberofdimes = 0
+    until numberofdimes == coins.div(10) do
+      numberofdimes += 1
+    end
+    numberofdimes
 
 
+    changeleft = coins - (numberofdimes*10)
+
+    numberofnickels = 0
+    until numberofnickels == changeleft.div(5) do
+      numberofnickels += 1
+    end
+    numberofnickels
+
+    newchangeleft = changeleft - (numberofnickels*5)
+
+    numberofpennies = 0
+    until numberofpennies == newchangeleft.div(1) do
+      numberofpennies += 1
+    end
+numberofpennies
 
 
   end

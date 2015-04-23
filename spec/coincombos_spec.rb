@@ -1,5 +1,8 @@
+
+
 require('rspec')
 require('coincombos')
+require('pry')
 
 describe('Fixnum#make_change') do
   #it('takes a coin amount and makes change with the fewest amount of coins') do
